@@ -396,7 +396,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+/*function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'html5-blank');
@@ -431,7 +431,7 @@ function create_post_type_html5()
             'category'
         ) // Add Category and Post Tags support
     ));
-}
+}  */
 
 /*------------------------------------*\
 	ShortCode Functions
@@ -447,6 +447,14 @@ function html5_shortcode_demo($atts, $content = null)
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
+}
+
+/*------------------------------------*\
+    Remove Default Page Editor in Admin
+\*------------------------------------*/
+add_action('init', 'my_remove_editor_from_post_type');
+function my_remove_editor_from_post_type() {
+    remove_post_type_support( 'page', 'editor' );
 }
 
 ?>

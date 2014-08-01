@@ -1,4 +1,7 @@
-# [HTML5 Blank](http://html5blank.com)
+# Maid-Services-Northwest
+=======================
+
+## Custom WordPress Theme for Maid Services Nortwest
 
 Powerful shell for rapidly deploying your WordPress projects.
 
@@ -72,7 +75,5 @@ There are a few ways to get involved, submit a Pull Request, or submit a comment
 * Author support showing the author
 * Demo Custom Page Template for expansion
 =======
-Maid-Services-Northwest
-=======================
 
-Custom WordPress Theme for Maid Services Nortwest
+

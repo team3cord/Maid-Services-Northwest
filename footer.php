@@ -2,10 +2,19 @@
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
+				<div class="copyright">
+					&copy; <?php echo date('Y'); ?><span class="footer-maid">&nbsp;|&nbsp;Maid Services</span>
+				</div>
+                <div class="footer-menu">
+                    <!-- nav -->
+					<nav class="footer-nav" role="navigation">
+                        <?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
+                    </nav>
+					<!-- /nav -->
+
+                </div>
+                <span class="chc">Website design by Crosshatch Creative</span>
+
 				<!-- /copyright -->
 
 			</footer>

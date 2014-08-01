@@ -64,6 +64,9 @@ a:hover,
 a:active {
 	outline:0;
 }
+ul {
+    list-style-type: none;
+}
 input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
@@ -86,6 +89,10 @@ input:focus {
 }
 /* logo */
 .logo {
+    float: left;
+    width: 35%;
+    min-height: 185px;
+    background: #ff00ff;
 
 }
 .logo-img {
@@ -93,7 +100,29 @@ input:focus {
 }
 /* nav */
 .nav {
+    float: right;
+    width: 65%;
+    min-height: 185px;
+    background: #ff0;
+}
+.nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    min-height: 185px;
+    padding-top: 84px;
+    background: #00ff00;
+}
+.nav li {
+    display: inline-block;
+    float: left;
+    position: relative;
 
+}
+.nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 /* sidebar */
 .sidebar {
@@ -101,7 +130,46 @@ input:focus {
 }
 /* footer */
 .footer {
+    float: left;
+    width: 100%;
+    min-height: 60px;
 
+
+}
+.copyright {
+    float: left;
+    min-height: 60px;
+    width: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.footer-menu {
+    display: block;
+    width: 100%;
+    height: 36px;
+}
+.footer-nav ul {
+    float: right;
+    margin: 0;
+    padding: 10px 0 ;
+}
+.footer-nav li {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.footer-nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.chc {
+    display: inline-block;
+    float: right;font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
 }
 
 /*------------------------------------*\
@@ -121,7 +189,17 @@ input:focus {
 \*------------------------------------*/
 
 @font-face {
-	font-family:'Font-Name';
+	font-family:'Raleway Bold';
+	src:url('fonts/raleway-bold-webfont.eot');
+	src:url('fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/raleway-bold-webfont.woff') format('woff'),
+		url('fonts/raleway-bold-webfont.ttf') format('truetype'),
+		url('fonts/raleway-bold-webfont.svg#raleway-bold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+	font-family:'Raleway ExtraBold';
 	src:url('fonts/font-name.eot');
 	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
 		url('fonts/font-name.woff') format('woff'),
@@ -130,6 +208,17 @@ input:focus {
     font-weight:normal;
     font-style:normal;
 }
+@font-face {
+	font-family:'Handlee';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/Handlee-Regular.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
 
 /*------------------------------------*\
     RESPONSIVE
