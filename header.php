@@ -48,3 +48,5 @@
 
 			</header>
 			<!-- /header -->
+        </div>
+		<!-- /wrapper -->

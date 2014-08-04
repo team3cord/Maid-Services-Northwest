@@ -1,4 +1,5 @@
-			<!-- footer -->
+		<div class="wrapper">
+            <!-- footer -->
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
