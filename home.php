@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section style="background: url('<?php echo get_field("main_image"); ?>')no-repeat;background-size: cover;background-position: center center;    width: 100%;min-height: 485px;" class="home-marquee">
+		<section style="background: url('<?php echo get_field("main_image"); ?>')no-repeat;background-size: cover;background-position: center center;    width: 100%;min-height: 364px;" class="home-marquee">
             <div class="marquee-list">
                 <?php echo get_field('main_marquee_list'); ?>
             </div>

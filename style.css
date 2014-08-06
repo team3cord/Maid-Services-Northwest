@@ -89,6 +89,72 @@ p {
     font-size: 16px;
 
 }
+
+input[type=text],  input.input-text,  textarea, input.txt,  input[type=tel],  input[type=email] {
+    border: 1px solid #d2cfca; /* stroke */
+    background-color: #fff; /* layer fill content */
+    margin-top: 5px;
+    -webkit-border-radius: .25em;
+    border-radius: .25em;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    box-shadow: none;
+    width: 380px;
+    height: 38px;
+}
+select {background: transparent;
+    color: #616161;
+    padding: 5px;
+    line-height: 1;
+    border: 0;
+    width: 385px;
+    height: 38px;
+}
+textarea {
+    height: 125px;
+}
+span.wpcf7-not-valid-tip{
+    color: #ff8e00;
+    margin-left: 10%;
+}
+.overpower-select {
+    display: block;
+    float: left;
+    margin:  1px 12px 25px 0;
+    padding-left: 10px;
+    width: 380px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #d6d9d9;
+    font-size: 14px;
+    background: #ffffff url("img/select-arrow.png") no-repeat right;
+}
+input[type='submit']{
+    width: 298px;
+    min-height: 98px;
+    background: #ffc832;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-top: none;
+    border-bottom: none;
+    color: #ffffff;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    white-space: normal;
+    margin-left: 36%;
+}
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -245,7 +311,7 @@ p {
     width: 42%;
     min-height: 364px;
     background: #271601;
-    padding-left: 11.7%;
+    padding-left: 10.5%;
 }
 .arrow-right {
     float: left;
@@ -367,7 +433,105 @@ p {
     font-size: 14px;
     color: #aca59e;
 }
+.form-callout {
+    float: left;
+    display: block;
+    padding: 16px 0 5px 0;
+
+}
+span.disclaimer {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    font-family: "Handlee";
+    font-size: 14px;
+ }
+.contact-you {
+    float: left;
+    width: 100%;
+    padding:25px 0 20px 35%;
+    background: url("img/home-arrow.png")#574b3a 9.5% 0 no-repeat;
+}
+.contact-home {
+    float: left;
+    width: 100%;
+    padding:25px 0 20px 35%;
+    background: url("img/about-arrow.png")#685d4e 9.5% 0 no-repeat;
+
+}
+.contact-looking {
+    float: left;
+    width: 100%;
+    padding:25px 0 70px 35%;
+    background: url("img/looking-arrow.png")#574b3a 9.5% 0 no-repeat;
+
+}
+.contact-wrap {
+    float: left;
+    display: block;
+    width: 43%;
+    min-height: 297px;
+}
+.radio-wrap {
+    float: left;
+    display: block;
+    width: 70%;
+    margin-right: 27%;
+    margin-bottom: 10px;
+}
+.radio-wrap.col-two span.wpcf7-list-item {
+    margin: 10px 0 0 0;
+    float: left;
+    width: 130px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.radio-wrap.col-four span.wpcf7-list-item {
+    margin: 10px 0 0 0;
+    float: left;
+    width: 60px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.wpcf7-radio span.wpcf7-list-item-label {
+    margin-left: 5px;
+}
+.contact-questions {
+    font-family: "Handlee";
+    font-size: 24px;
+    color: #ff8e00;
+}
+.contact-you p,.contact-home p, .contact-looking p {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.location-sub-footer {
+    float: left;
+    width: 100%;
+    min-height: 58px;
+    background: #faf8f7;
+    padding-left: 4%;
+
+}
+.chamber {
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.location-sub-footer span {
+    display: inline-block;
+    float: left;
+    margin-top: 21px;
+}
+.weather {
+    float: left;
+    margin: 13px 15px 0 15px;
+}
 /*------------------------------------*\
+
     IMAGES
 \*------------------------------------*/
 
