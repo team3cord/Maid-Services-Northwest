@@ -206,6 +206,7 @@ input[type='submit']{
     display: inline-block;
     float: left;
     position: relative;
+    padding-bottom: 15px;
 
 }
 .nav li a {
@@ -239,7 +240,7 @@ input[type='submit']{
 .footer-menu {
     display: block;
     width: 100%;
-    height: 36px;
+    min-height: 36px;
 }
 .footer-nav ul {
     float: right;
@@ -250,6 +251,7 @@ input[type='submit']{
     display: inline-block;
     float: left;
     position: relative;
+    padding-bottom: 10px;
 }
 .footer-nav li a {
     font-family: 'Raleway', sans-serif;
@@ -434,6 +436,12 @@ main {position: relative}
     min-height: 175px;
     padding: 0 9.5% 0 8.5%;
 }
+.list-columns {
+    display: block;
+    float: left;
+    width: 25%;
+    min-height: 100px;
+}
 .loc-icon {
     float: left;
     width: 18%;
@@ -447,7 +455,7 @@ main {position: relative}
 .loc-content ul {
     float: left;
     display: block;
-    width: 25%;
+    width: 90%;
     margin: 0;
     padding: 0;
 }
@@ -582,8 +590,7 @@ span.disclaimer {
 .section-sub-nav ul {
     float: right;
     margin: 0;
-    padding: 0;
-    padding-top: 25px;
+    padding: 25px 0 20px 0;
 }
 .section-sub-nav li {
     display: inline-block;
@@ -726,22 +733,197 @@ span.disclaimer {
     RESPONSIVE
 \*------------------------------------*/
 
-@media only screen and (min-width:320px) {
+
+@media only screen and (max-width:1280px) {
+}
+
+@media only screen and (max-width:1180px) {
+    .marquee-list li {
+        margin-top: 16px;
+    }
+    .loc-content {
+        width: 75%;
+    }
 
 }
-@media only screen and (min-width:480px) {
+@media only screen and (max-width:1070px) {
+    .contact-quote {
+        width: 70%;
+    }
+    .contact-quote img {
+        right: 10px;
+    }.custom-main {
+    width: 65.8%;
+         }
+}
+@media only screen and (max-width:990px) {
+    .nav ul {
+        padding-top: 65px;
+    }
+    .marquee-list li {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+@media only screen and (max-width:860px) {
+    .contact-quote {
+        width: 50%;
+        min-height: 99px;
+    }
+    .contact-quote img {
+        display: none;
+    }
+    .contact-btn {
+        width: 40%;
+    }
+    .line-one {
+        font-size: 18px;
+    }
+    .line-two {
+        font-size: 25px;
+    }
+    .repeater img {
+        width: 30%;
+    }
+    .test-header {
+        width: 30%;
+    }
+    .loc-content {
+        padding-left: 15px;
+
+    }
+    .list-columns {
+        width: 35%;
+    }
+    .custom-test-sidebar {
+        width: 30%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .logo, .nav, .nav ul {
+        min-height: 150px;
+    }
+    .nav ul {
+        padding-top: 52px;
+    }
+    .loc-icon {
+        width: 30%;
+    }
+    .loc-content {
+        width: 65%;
+    }
+    .list-columns {
+        width: 50%;
+    }
+    .copyright {
+        width: 40%;
+    }
+    .footer-menu {
+        width: 60%;
+        float: left;
+    }
+
 
 }
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:640px) {
+    .logo {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        min-height: 100px;
+    }
+    .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .nav {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 100px;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+        min-height: 100px;
+    }
+    .marquee-list {
+        width: 100%;
+        min-height: 400px;
+    }
+    .arrow-right {
+        display: none;
+    }
+    .home-marquee img {
+        width: 100%;
+    }
+    .test-header {
+        width: 100%;
+        padding: 0;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .test-body {
+        width: 100%;
+        padding-top: 0;
+    }
+    .custom-main {
+        width: 100%;
+    }
+    .custom-test-sidebar {
+        width: 100%;
+
+    }
 
 }
-@media only screen and (min-width:1024px) {
-
+@media only screen and (max-width:580px) {
+    .contact-quote {
+        width: 100%;
+        float: none;
+        border-right: none;
+    }
+    .contact-btn {
+        width: 50%;
+        float: none;
+        margin: 0 auto;
+        border-left: 2px solid #ffffff;
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        margin-bottom: 5px;
+    }
 }
-@media only screen and (min-width:1140px) {
-
+@media only screen and (max-width:500px) {
+    .repeater img, .repeater-content {
+        width: 100%;
+    }
+    .contact-btn {
+        width: 70%;
+    }
+    .loc-icon, .loc-content, .list-columns {
+        width: 100%;
+    }
+    .copyright, .footer-menu {
+        width: 100%;
+    }
+    .nav li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        padding: 5px 0;
+    }
+    .nav li:last-of-type {
+        border-bottom: 1px solid grey;
+    }
+    .nav ul {
+        padding: 0 0 10px 0;
+    }
 }
-@media only screen and (min-width:1280px) {
+
+@media only screen and (max-width:320px) {
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),

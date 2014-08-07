@@ -28,8 +28,10 @@
         $(document).ready(function(){
         $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
 
-        var customMain = $('.custom-main').height();
-        $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+            if ($(window).width() > 641) {
+                var customMain = $('.custom-main').height();
+                $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+            }
         })
 
     });
