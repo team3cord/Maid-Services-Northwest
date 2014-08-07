@@ -1,16 +1,22 @@
 <?php get_header(); ?>
 
 	<main id="category" role="main">
+        <!-- section -->
+        <section class="custom-banner">
+            <div class="custom-title">
+                <h4><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h4>
+            </div>
+
+        </section>
+        <section class="blog-main">
 		<!-- section -->
 		<section>
 
-			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
 
 			<?php get_template_part('loop'); ?>
 
 			<?php get_template_part('pagination'); ?>
 
-		</section>
 		<!-- /section -->
 	</main>
 
