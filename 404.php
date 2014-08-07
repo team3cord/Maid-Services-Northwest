@@ -1,24 +1,28 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<main role="main">
+    <!-- section -->
 
-			<!-- article -->
-			<article id="post-404">
 
-				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
+    <section class="custom-banner">
+        <div class="custom-title">
+            <h4>404 ~ File or Page Not Found</h4>
+        </div>
 
-			</article>
-			<!-- /article -->
 
-		</section>
-		<!-- /section -->
-	</main>
+    </section>
+    <section style="min-height: 600px;"class="custom-main">
+        <p class="four-o-four">
+            We're sorry the page you requested cannot be found in our database. It may have been moved or changed.
+        </p>
+    </section>
+    <aside style="min-height: 600px;" class="custom-test-sidebar">
+        <?php echo get_field('testimonial_shortcode', 4); ?>
+    </aside>
 
-<?php get_sidebar(); ?>
+</main>
 
+<?php get_template_part('sub', 'footer'); ?>
 <?php get_footer(); ?>
+
+

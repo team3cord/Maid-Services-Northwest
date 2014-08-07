@@ -1,7 +1,6 @@
 <!-- sidebar -->
-<aside class="sidebar" role="complementary">
-
-	<?php get_template_part('searchform'); ?>
+<aside class="sidebar custom-test-sidebar" role="complementary">
+    <?php echo get_field('testimonial_shortcode', 4); ?>
 
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>

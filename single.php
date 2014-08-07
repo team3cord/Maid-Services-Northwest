@@ -1,18 +1,27 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main id="single" role="main">
 	<!-- section -->
-	<section>
+        <section class="custom-banner">
+            <div class="custom-title">
+                <h4><?php echo the_title(); ?></h4>
+            </div>
+            <div class="section-sub-nav">
+                <?php echo get_field('sub_navigation_list');?>
+            </div>
+
+        </section>
+	<section class="blog-main">
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" class="blog-post">
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+					<?//php the_post_thumbnail(); // Fullsize image for the single post ?>
 				</a>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
@@ -64,4 +73,15 @@
 
 <?php get_sidebar(); ?>
 
+<?php get_template_part('sub', 'footer'); ?>
+<script>
+    jQuery(function($){
+        $(document).ready(function(){
+
+            var customMain = $('.blog-main').height();
+            $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+        })
+
+    });
+</script>
 <?php get_footer(); ?>

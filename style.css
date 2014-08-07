@@ -71,6 +71,13 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
+h1 {
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+
+}
 h3 {
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
@@ -87,6 +94,7 @@ h4 {
 p {
     font-family: "Raleway",sans-serif;
     font-size: 16px;
+    color: #271601;
 
 }
 
@@ -204,6 +212,7 @@ input[type='submit']{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    color: #271601;
 }
 /* sidebar */
 .sidebar {
@@ -225,6 +234,7 @@ input[type='submit']{
     font-size: 12px;
     font-weight: 400;
     padding-top: 10px;
+    color: #cbbfb0;
 }
 .footer-menu {
     display: block;
@@ -245,12 +255,14 @@ input[type='submit']{
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 400;
+    color: #cbbfb0;
 }
 .chc {
     display: inline-block;
     float: right;font-family: 'Raleway', sans-serif;
     font-size: 11px;
     font-weight: 400;
+    color: #cbbfb0;
 }
 .orange-panel {
     float: left;
@@ -525,10 +537,92 @@ span.disclaimer {
     display: inline-block;
     float: left;
     margin-top: 21px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #939798;
 }
 .weather {
     float: left;
     margin: 13px 15px 0 15px;
+}
+.custom-banner {
+    float: left;
+    width: 100%;
+    min-height: 52px;
+    background: url("img/custom-banner-background.jpg");
+    padding: 0 4% 0 8.5%;
+}
+.custom-title {
+    float: left;
+    width: 30%;
+}
+.custom-banner h4 {
+    color: #ffffff;
+}
+.section-sub-nav {
+    float: right;
+    width: 70%;
+    min-height: 52px;
+}
+.section-sub-nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+}
+.section-sub-nav li {
+    display: inline-block;
+    float: left;
+}
+.section-sub-nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #b8b4af;
+}
+.section-sub-nav a:hover{
+    color: #ffffff;
+}
+.custom-main, .blog-main {
+    float: left;
+    width: 56%;
+    padding: 20px 15px 30px 8.5%;
+}
+.custom-test-sidebar {
+    float: left;
+    width: 23%;
+    background: url("img/cream_pixels.png");
+    height: inherit;
+}
+.blog-post h1 a {
+    color: #ff8e00;
+}
+.blog-post h1 a:hover {
+    color: #b8b4af;
+}
+.date, .author, .comments {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.author a:hover,.comments a:hover, .blog-post p a:hover, .sidebar-widget a:hover {
+    color: #ff8e00;
+}
+.sidebar {
+    padding: 15px 0 25px 0;
+}
+.sidebar-widget {
+    padding: 0 15px;
+}
+.sidebar-widget a {
+    font-family: "Raleway",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.sidebar-widget ul {
+    margin: 0;
+    padding: 0;
 }
 /*------------------------------------*\
 

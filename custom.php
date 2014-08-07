@@ -1,44 +1,37 @@
 <?php /* Template Name: CUSTOM Template */ get_header(); ?>
 
-    <main role="main">
+    <main id="custom" role="main">
         <!-- section -->
-        <section>
 
-            <h1><?php the_title(); ?></h1>
 
-            <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-                <!-- article -->
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-                    <?php the_content(); ?>
-
-                    <?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-                    <br class="clear">
-
-                    <?php edit_post_link(); ?>
-
-                </article>
-                <!-- /article -->
-
-            <?php endwhile; ?>
-
-            <?php else: ?>
-
-                <!-- article -->
-                <article>
-
-                    <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-                </article>
-                <!-- /article -->
-
-            <?php endif; ?>
+        <section class="custom-banner">
+            <div class="custom-title">
+                <h4><?php echo the_title(); ?></h4>
+            </div>
+            <div class="section-sub-nav">
+                <?php echo get_field('sub_navigation_list');?>
+            </div>
 
         </section>
-        <!-- /section -->
+        <section class="custom-main">
+            <?php echo get_field('custom_content'); ?>
+        </section>
+        <aside class="custom-test-sidebar">
+            <?php echo get_field('testimonial_shortcode', 4); ?>
+        </aside>
+
     </main>
 
 <?php get_template_part('sub', 'footer'); ?>
+<script>
+    jQuery(function($){
+        $(document).ready(function(){
+        $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
+
+        var customMain = $('.custom-main').height();
+        $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+        })
+
+    });
+</script>
 <?php get_footer(); ?>
