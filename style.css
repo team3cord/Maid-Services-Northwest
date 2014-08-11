@@ -51,11 +51,11 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:#444;
+	color: #271601;
 	text-decoration:none;
 }
 a:hover {
-	color:#444;
+	color:#aaa6a3;
 }
 a:focus {
 	outline:0;
@@ -125,7 +125,7 @@ select {background: transparent;
     padding: 5px;
     line-height: 1;
     border: 0;
-    width: 385px;
+    width: 395px;
     height: 38px;
 }
 textarea {
@@ -162,6 +162,10 @@ input[type='submit']{
     font-size: 26px;
     white-space: normal;
     margin-left: 36%;
+}
+input[type='submit']:hover {
+    background: #574526;
+
 }
 /*------------------------------------*\
     STRUCTURE
@@ -213,6 +217,9 @@ input[type='submit']{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    color: #aaa6a3;
+}
+.nav li a:hover, li.current-menu-item a {
     color: #271601;
 }
 /* sidebar */
@@ -245,7 +252,7 @@ input[type='submit']{
 .footer-nav ul {
     float: right;
     margin: 0;
-    padding: 10px 0 ;
+    padding: 10px 0 0 0 ;
 }
 .footer-nav li {
     display: inline-block;
@@ -258,6 +265,9 @@ input[type='submit']{
     font-size: 12px;
     font-weight: 400;
     color: #cbbfb0;
+}
+.footer-nav li a:hover, li.current-menu-item a {
+    color: #271601;
 }
 .chc {
     display: inline-block;
@@ -307,7 +317,10 @@ input[type='submit']{
     background: #ffc832;
     border-right: 2px solid #FFFFFF ;
 }
-.contact-btn-link{
+.contact-btn:hover {
+    background: #574526;
+}
+.contact-btn-link {
     display: block;
     color: #FFFFFF;
     font-family: "Raleway Bold",sans-serif;
@@ -315,6 +328,9 @@ input[type='submit']{
     text-align: center;
     padding: 30px 0 30px;
 
+}
+.contact-btn-link:hover {
+    color: #ffffff;
 }
 
 /*------------------------------------*\
@@ -752,7 +768,7 @@ span.disclaimer {
     }
     .contact-quote img {
         right: 10px;
-    }.custom-main {
+    }.custom-main, .blog-main {
     width: 65.8%;
          }
 }
@@ -798,6 +814,9 @@ span.disclaimer {
     .custom-test-sidebar {
         width: 30%;
     }
+    .contact-wrap {
+      width:70%;
+
 }
 @media only screen and (max-width:768px) {
     .logo, .nav, .nav ul {
@@ -869,13 +888,26 @@ span.disclaimer {
         width: 100%;
         padding-top: 0;
     }
-    .custom-main {
+    .custom-main, .blog-main {
         width: 100%;
+        padding: 20px 8.5% 30px 8.5%;
     }
-    .custom-test-sidebar {
+    .custom-test-sidebar, .custom-title {
         width: 100%;
 
     }
+    .contact-you, .contact-home, .contact-looking {
+        background-image: none;
+        padding-left:8%;
+    }
+    input[type='submit']{
+        display: block;
+        margin: 0 auto;
+    }
+    .blog-list-img, .blog-list-content {
+        width: 100%;
+    }
+}
 
 }
 @media only screen and (max-width:580px) {
@@ -923,8 +955,13 @@ span.disclaimer {
     }
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:460px) {
+    .overpower-select {
+      width: 295px;
+    }
 
+    input[type=text],  input.input-text,  textarea, input.txt,  input[type=tel],  input[type=email] {
+      width:300px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {

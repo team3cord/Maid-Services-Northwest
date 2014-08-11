@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="location-form">
+        <section class="location-form" id="quote-form">
 
             <div class="orange-panel">
                 <div class="form-callout">

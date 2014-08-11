@@ -14,7 +14,7 @@
 					<!-- /nav -->
 
                 </div>
-                <span class="chc">Website design by Crosshatch Creative</span>
+                <span class="chc">Website design by <a target="_blank" href="http://crosshatchcreative.com/">Crosshatch Creative</a></span>
 
 				<!-- /copyright -->
 
