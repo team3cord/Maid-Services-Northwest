@@ -68,7 +68,7 @@
                 $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
 
                 if ($(window).width() > 641) {
-                    var customMain = $('.custom-main').height();
+                    var customMain = $('.blog-main').height();
                     $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
                 }
             })

@@ -1,45 +1,39 @@
 <?php get_header(); ?>
 
-	<main id="page" role="main">
-		<!-- section -->
-		<section>
+<main id="custom" role="main">
+    <!-- section -->
 
-			<h1><?php the_title(); ?></h1>
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+    <section class="custom-banner">
+        <div class="custom-title">
+            <h4><?php echo the_title(); ?></h4>
+        </div>
+        <div class="section-sub-nav">
+            <?php echo get_field('sub_navigation_list');?>
+        </div>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    </section>
+    <section class="custom-main">
+        <?php echo get_field('custom_content'); ?>
+    </section>
+    <aside class="custom-test-sidebar">
+        <?php echo get_field('testimonial_shortcode', 4); ?>
+    </aside>
 
-				<?php the_content(); ?>
+</main>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
+<?php get_template_part('sub', 'footer'); ?>
+<script>
+    jQuery(function($){
+        $(document).ready(function(){
+            $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
 
-				<br class="clear">
+            if ($(window).width() > 641) {
+                var customMain = $('.custom-main').height();
+                $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+            }
+        })
 
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
-
+    });
+</script>
 <?php get_footer(); ?>
