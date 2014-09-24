@@ -219,9 +219,13 @@ input[type='submit']:hover {
     font-weight: 600;
     color: #aaa6a3;
 }
-.nav li a:hover, li.current-menu-item a {
+.nav li a:hover, li.current-menu-item a, .nav li#menu-item-176 a:hover {
     color: #271601;
 }
+.nav li#menu-item-176 a {
+    color: #ffc832;
+}
+
 /* sidebar */
 .sidebar {
 
@@ -552,6 +556,21 @@ span.disclaimer {
     font-size: 24px;
     color: #ff8e00;
 }
+.radio-questions {
+    margin: 0 27% 25px 0;
+    float: left;
+    width: 70%;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.bbb-last {
+    width: 80%
+}
+.radio-questions.bbb-last span.wpcf7-list-item.last {
+    width: 180px;
+}
+
 .contact-you p,.contact-home p, .contact-looking p {
     color: #FFFFFF;
     font-size: 12px;
@@ -626,6 +645,12 @@ span.disclaimer {
     width: 65%;
     padding: 20px 15px 30px 8.5%;
 }
+.default-main {
+    float: left;
+    width: 100%;
+    padding: 20px 15px 30px 8.5%;
+}
+
 .custom-main h4 {
     color: #990000;
 }

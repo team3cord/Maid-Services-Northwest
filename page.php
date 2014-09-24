@@ -13,12 +13,10 @@
         </div>
 
     </section>
-    <section class="custom-main">
+    <section class="default-main">
         <?php echo get_field('custom_content'); ?>
     </section>
-    <aside class="custom-test-sidebar">
-        <?php echo get_field('testimonial_shortcode', 4); ?>
-    </aside>
+
 
 </main>
 

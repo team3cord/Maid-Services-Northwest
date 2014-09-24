@@ -10,5 +10,5 @@
 		<!-- /section -->
         <div class="orange-panel">
             <div class="contact-quote"><span class="line-one">CONTACT US FOR YOUR</span><br><span class="line-two">FREE ESTIMATE</span><img src="<?php echo get_template_directory_uri(); ?>/img/contact-arrow.png"></div>
-            <div class="contact-btn"><a class="contact-btn-link" href="<?php get_permalink(); ?>">GET STARTED</a></div>
+            <div class="contact-btn"><a class="contact-btn-link" href="#mc-start-link">GET STARTED</a></div>
         </div>

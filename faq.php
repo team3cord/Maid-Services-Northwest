@@ -1,4 +1,4 @@
-<?php /* Template Name: CUSTOM Template */ get_header(); ?>
+<?php /* Template Name: FAQ Template */ get_header(); ?>
 
     <main id="custom" role="main">
         <!-- section -->
@@ -23,19 +23,19 @@
     </main>
 
 <?php get_template_part('sub', 'footer'); ?>
-<script>
-    jQuery(function($){
-        $(document).ready(function(){
-        $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
+    <script>
+        jQuery(function($){
+            $(document).ready(function(){
+                $('.section-sub-nav a').not(':last').append('\xA0\xA0\xA0/\xA0\xA0\xA0');
 
-            if ($(window).width() > 641) {
-                var customMain = $('.custom-main').height();
-                $('.custom-test-sidebar').css('min-height', customMain + 50 + 'px');
+                if ($(window).width() > 641) {
+                    var customMain = $('.custom-main').height();
+                    $('.custom-test-sidebar').css('min-height', customMain + 350 + 'px');
 
-            }
+                }
 
-        })
+            })
 
-    });
-</script>
+        });
+    </script>
 <?php get_footer(); ?>
