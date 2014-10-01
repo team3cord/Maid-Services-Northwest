@@ -4,6 +4,9 @@
 
 
         <?php get_template_part('main', 'marquee'); ?>
+        <div class="location-coupon">
+            <img src="<?php echo get_field('coupon_image'); ?>">
+        </div>
         <section class="home-main">
             <?php
 

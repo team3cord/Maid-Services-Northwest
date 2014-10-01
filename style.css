@@ -484,6 +484,10 @@ main {position: relative}
     font-size: 14px;
     color: #aca59e;
 }
+.location-coupon img {
+    width: 100%;
+}
+
 .location-form .orange-panel {
     /* margin-top: 81px;*/
 }

@@ -15,7 +15,9 @@
             <div class="contact-quote"><span class="line-one">CONTACT US FOR YOUR</span><br><span class="line-two">FREE ESTIMATE</span><img src="<?php echo get_template_directory_uri(); ?>/img/contact-arrow.png"></div>
             <div class="contact-btn"><a class="contact-btn-link" href="#mc-start-link">GET STARTED</a></div>
         </div>
-
+        <div class="location-coupon">
+            <img src="<?php echo get_field('coupon_image'); ?>">
+        </div>
 
         <section class="location-main">
                     <article class="repeater">
